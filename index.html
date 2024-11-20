@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clasifica las Palabras</h1>
+        <h2>Arrastra a su categoría correcta</h2>
+        <div class="categorias">
+            <div class="categoria" data-category="frutas">
+                <h2>Frutas</h2>
+            </div>
+            <div class="categoria" data-category="animales">
+                <h2>Animales</h2>
+            </div>
+            <div class="categoria" data-category="colores">
+                <h2>Colores</h2>
+            </div>
+        </div>
+        <div class="palabras">
+            <div class="palabra" draggable="true" data-category="frutas">Pera</div>
+            <div class="palabra" draggable="true" data-category="animales">Perro</div>
+            <div class="palabra" draggable="true" data-category="colores">Rojo</div>
+            <div class="palabra" draggable="true" data-category="frutas">Plátano</div>
+            <div class="palabra" draggable="true" data-category="animales">Gato</div>
+            <div class="palabra" draggable="true" data-category="colores">Azul</div>
+        </div>
+        <button id="boton-validar">Validar palabras</button>
+    </div>
+</body>
+
+</html>
